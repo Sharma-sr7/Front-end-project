@@ -103,7 +103,7 @@ nav .dropdown {
 }
 .menu-list{
     background-color: black;
-    width: 50%;
+    width: 80%;
     height: 100%;
     position: fixed;
     top: 0px;
@@ -111,7 +111,7 @@ nav .dropdown {
     color: white;
     transition: 0.6s ease;
     transition-property: left;
-    left: -50%;
+    left: -80%;
 }
 .menu-list.active{
     left: 0%;
@@ -137,12 +137,12 @@ nav .dropdown {
     line-height: 50px;
     
 }
-.menu-list .sub-menu .sidebar-icon{
+.menu-list .sub-menu .sidebar-icon, .menu-list .sub-menu1 .sidebar-icon{
     position: absolute;
     right: 10px;
     transition: 0.3s ease;
 }
-.menu-list .sub-menu-list{
+.menu-list .sub-menu-list, .menu-list .sub-menu-list1{
     margin-top: 10px;
     background-color: rgb(20, 19, 19);
     transition: height 0.35s ease-in-out;
@@ -151,13 +151,13 @@ nav .dropdown {
     margin-left: -70%;
     transition: 0.7s ease-in-out;
 }
-.sub-menu-list.active{
+.sub-menu-list.active, .sub-menu-list1.active{
     margin-left: 0%;
 }
-.menu-list .sub-menu-list:not(.active){
+.menu-list .sub-menu-list:not(.active), .menu-list .sub-menu-list1:not(.active){
     display: none;
 }
-.sub-menu .rotate{
+.sub-menu .sub-menu-icon.rotate, .sub-menu1 .sub-menu-icon1.rotate{
     transform: rotate(90deg);
 }
 .sec2,
