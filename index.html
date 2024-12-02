@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="sec1">
+        <header>
+            <h1>LEARNWITHSR7</h1>
+            <nav>
+                <div class="dropdown">
+                    <span>Tutorials <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="htmlhome.html">HTML</a>
+                        <a href="csshtml.html">CSS</a>
+                        <a href="jshtml.html">JAVASCRIPT</a>
+                        <a href="pythonhtml.html">PYTHON</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>Interview Q/A <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="dropdown-content">
+                        <a href="">HTML</a>
+                        <a href="">CSS</a>
+                        <a href="">JAVASCRIPT</a>
+                        <a href="">PYTHON</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        <div class="menu-list">
+            <p><i class="fa-solid fa-xmark"></i></p>
+            <div class="menu-con">
+                <div class="sub-menu">
+                    <h3 data-target="toggle-1">Tutorials <i class="fa-solid fa-angle-right sidebar-icon"></i></h3>
+                    <div class="sub-menu-list" id="toggle-1">
+                        <a href="htmlhome.html">HTML</a>
+                        <a href="csshtml.html">CSS</a>
+                        <a href="jshtml.html">JAVASCRIPT</a>
+                        <a href="pythonhtml.html">PYTHON</a>
+                    </div>
+                </div>
+                <div class="sub-menu">
+                    <h3 data-target="toggle-2">Interview Q/A <i class="fa-solid fa-angle-right sidebar-icon"></i></h3>
+                    <div class="sub-menu-list" id="toggle-2">
+                        <a href="">HTML</a>
+                        <a href="">CSS</a>
+                        <a href="">JAVASCRIPT</a>
+                        <a href="">PYTHON</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="con1">
+                <h4>Learn With Us</h4>
+                <h1>Discover Your Coding Potential</h1>
+                <p>"To become a developer, learning the basics is the first step."</p>
+            </div>
+            <div class="con2">
+                <img src="pngtree-man-studying-analytics-on-laptop-png-image_11353733.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="html-con">
+            <h1>HTML</h1>
+            <P>The language for building web pages</P>
+            <a href="htmlhome.html" class="b1">Learn HTML</a> <br>
+            <a href="htmlhome.html" class="b2">HTML Tags</a> <br>
+
+        </div>
+        <div class="exa">
+            <h2>HTML Example:</h2>
+            <div class="code">
+                <span class="ot">&lt;</span>
+                <span class="tags">!DOCTYPE html</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">html</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">head</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">title</span>
+                <span class="ct">></span> <span class="code-con">HTML Exapmle</span>
+                <span class="ot">&lt;</span>
+                <span class="tags">/title</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">/head</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">body</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">h1</span>
+                <span class="ct">></span> <span class="code-con">This is a heading</span>
+                <span class="ot">&lt;</span>
+                <span class="tags">/h1</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">p</span>
+                <span class="ct">></span> <span class="code-con">This is a papagraph</span>
+                <span class="ot">&lt;/</span>
+                <span class="tags">p</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">/body</span>
+                <span class="ct">></span> <br>
+                <span class="ot">&lt;</span>
+                <span class="tags">/html</span>
+                <span class="ct">></span> <br>
+
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="css-con">
+            <h1>CSS</h1>
+            <P>The language for styling web pages</P>
+            <a href="csshtml.html" class="b1">Learn CSS</a> <br>
+            <a href="csshtml.html" class="b2">CSS Properties</a> <br>
+
+        </div>
+        <div class="exa">
+            <h2>CSS Example:</h2>
+            <div class="code">
+                <span class="tags">body</span> <span class="dark">&lcub;</span><br>
+                <pre class="pro">     background-color</pre> <span class="dark">:</span> <span
+                    class="code-con">black</span> <span class="dark">;</span> <br>
+                <span class="dark">&rcub;</span> <br> <br>
+                <span class="tags">h1</span> <span class="dark">&lcub;</span><br>
+                <pre class="pro">     color</pre> <span class="dark">:</span> <span class="code-con">grey</span> <span
+                    class="dark">;</span> <br>
+                <span class="dark">&rcub;</span> <br> <br>
+                <span class="tags">p</span> <span class="dark">&lcub;</span><br>
+                <pre class="pro">     display</pre> <span class="dark">:</span> <span class="code-con">inline</span>
+                <span class="dark">;</span> <br>
+                <span class="dark">&rcub;</span>
+            </div>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="js-con">
+            <h1>JS</h1>
+            <P>The language for programming web pages</P>
+            <a href="jshtml.html" class="b1">Learn JS</a> <br>
+            <a href="jshtml.html" class="b2">JS Overview</a> <br>
+        </div>
+        <div class="exa">
+            <h2>JavaScript Exapmle:</h2>
+            <div class="code">
+                <span class="ot">&lt;</span> <span class="tags">button</span> <span class="att">onclick</span> <span
+                    class="dark">=</span>
+                <span class="fun">"myFucntion()"</span> <span class="dark">></span> <span class="code-con">Click
+                    Me!</span> <br>
+                <span class="dark">&lt; /</span>
+                <span class="tags">button</span> <span class="dark">></span> <br>
+                <span class="ot">&lt; </span><span class="tags">script</span> <span class="ot">></span> <br>
+                <span class="fun">function </span> <span class="code-con">myFunction( )</span> <span class="dark">
+                    &lcub;</span> <br>
+                <span>
+                    <pre class="fun">      let</pre>
+                </span> <span class="code-con">x</span> <span class="code-con"> = document.getElementById &lpar;</span>
+                <span class="tags">"demo"</span> <span class="code-con"> &rpar; ;</span> <br>
+                <span class="code-con">
+                    <pre>      x.style.fontSize = </pre>
+                </span> <span class="tags"> "20px"</span> <span class="code-con"> ; </span> <br>
+                <span class="code-con">
+                    <pre>      x.style.margin = </pre>
+                </span> <span class="tags"> "0px"</span> <span class="code-con"> ; </span> <br>
+                <span class="dark"> &rcub;</span> <br>
+                <span class="ot"> &lt; / </span> <span class="tags">script </span> <span class="dark">></span>
+            </div>
+        </div>
+    </section>
+    <section class="sec5">
+        <div class="python-con">
+            <h1>PYTHON</h1>
+            <P>A popular programming language</P>
+            <a href="pythonhtml.html" class="b1">Learn Python</a> <br>
+            <a href="pythonhtml.html" class="b2">Python Overview</a> <br>
+        </div>
+        <div class="exa">
+            <h2>PYTHON Example:</h2>
+            <div class="code">
+                <span class="fun">a </span> <span class="dark">=</span> <span class="code-con">10</span> <br>
+                <span class="fun">a </span> <span class="dark">=</span> <span class="code-con">10</span> <br>
+                <span class="tags">print</span> <span class="dark">&lpar; </span> <span class="code-con">a+b</span>
+                <span class="dark"> &rpar;</span> <br>
+                <span class="tags">print</span> <span class="dark"> &lpar; </span> <span class="code-con">"Hello
+                    World"</span> <span class="dark"> &rpar;</span> <br> <br> <br> <br> <br>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="tuto">
+                <h2>Our Tutorials</h2>
+                <p><a href="htmlhome.html">HTML Tutorial</a></p>
+                <p><a href="csshtml.html">CSS Tutorial</a></p>
+                <p><a href="jshtml.html">JAVASCRIPT Tutorial</a></p>
+                <p><a href="pythonhtml.html">PYTHON Tutorial</a></p>
+            </div>
+            <div class="iq">
+                <h2>Interview Questions</h2>
+                <p><a href="">HTML</a></p>
+                <p><a href="">CSS</a></p>
+                <p><a href="">JAVASCRIPT</a></p>
+                <p><a href="">PYTHON</a></p>
+            </div>
+            <div class="comp">
+                <h2>Online Compilers</h2>
+                <p><a href="htmlcompiler.html">HTML</a></p>
+                <p><a href="">CSS</a></p>
+                <p><a href="">JAVASCRIPT</a></p>
+                <p><a href="">PYTHON</a></p>
+            </div>
+        </div>
+        <p id="copy">copyright &copy; learnwithsr7. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

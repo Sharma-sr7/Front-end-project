@@ -1,0 +1,508 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 150px;
+    border: 1px solid #ddd;
+    background-color: rgb(21, 61, 59);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid bisque;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(30, 83, 63);
+    font-size: 17px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #dcf8ef;
+    box-shadow: 0px 0px 5px rgba(18, 156, 190, 0.5);
+}
+
+nav {
+    display: flex;
+}
+
+nav .dropdown {
+    margin: 10px;
+}
+
+.dropdown span {
+    font-weight: bold;
+    font-size: large;
+}
+
+.sec1 {
+    background-color: #dcf8ef;
+    height: 100vh;
+    width: 100%;
+}
+
+.sec1 .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 8%;
+    margin-top: 100px;
+}
+
+.main .con1 {
+    width: 50%;
+}
+
+.sec1 .main h4 {
+    color: #056101;
+    font-size: x-large;
+    margin: 5px;
+}
+
+.sec1 .main h1 {
+    font-size: 50px;
+    margin: 5px;
+}
+
+.sec1 .main p {
+    font-size: x-large;
+    margin: 5px;
+}
+.menu{
+    display: none;
+}
+.menu-list{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: white;
+    transition: 0.6s ease;
+    transition-property: left;
+    left: -50%;
+}
+.menu-list.active{
+    left: 0%;
+}
+.menu-list h3{
+    padding-left: 10px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+.menu-list .menu-con{
+    margin-top: 50px;
+}
+.menu-list p{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 5px;
+}
+.menu-list a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    line-height: 50px;
+    
+}
+.menu-list .sub-menu .sidebar-icon{
+    position: absolute;
+    right: 10px;
+    transition: 0.3s ease;
+}
+.menu-list .sub-menu-list{
+    margin-top: 10px;
+    background-color: rgb(20, 19, 19);
+    transition: height 0.35s ease-in-out;
+    overflow: hidden;
+    padding-left: 30px;
+    margin-left: -70%;
+    transition: 0.7s ease-in-out;
+}
+.sub-menu-list.active{
+    margin-left: 0%;
+}
+.menu-list .sub-menu-list:not(.active){
+    display: none;
+}
+.sub-menu .rotate{
+    transform: rotate(90deg);
+}
+.sec2,
+.sec3,
+.sec4,
+.sec5 {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.exa {
+    width: 450px;
+    border: 1px solid black;
+    background-color: rgb(223, 228, 231);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+
+.sec2 {
+    background-color: #e4c7ba;
+
+}
+
+.sec3 {
+    background-color: #cddfb6;
+
+}
+
+.sec4 {
+    background-color: #c0e0de;
+
+}
+
+.sec5 {
+    background-color: #c1c4e4;
+
+}
+
+.html-con,
+.css-con,
+.js-con,
+.python-con {
+    width: 25%;
+    text-align: center;
+}
+
+.html-con h1,
+.css-con h1,
+.js-con h1,
+.python-con h1 {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.html-con p,
+.css-con p,
+.js-con p,
+.python-con p {
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: 1px;
+
+}
+
+.html-con a,
+.css-con a,
+.js-con a,
+.python-con a {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.html-con .b1,
+.css-con .b1,
+.js-con .b1,
+.python-con .b1 {
+    background-color: rgb(35, 117, 39);
+}
+
+.html-con .b2,
+.css-con .b2,
+.js-con .b2,
+.python-con .b2 {
+    background-color: rgb(39, 46, 40);
+}
+
+.html-con .b1:hover,
+.css-con .b1:hover,
+.js-con .b1:hover,
+.python-con .b1:hover {
+    background-color: rgb(22, 75, 25);
+}
+
+.html-con .b2:hover,
+.css-con .b2:hover,
+.js-con .b2:hover,
+.python-con .b2:hover {
+    background-color: rgb(19, 24, 20);
+}
+
+.code {
+    line-height: 1.5em;
+    letter-spacing: 2pxem;
+    box-shadow: 0px 0px 5px rgba(250, 254, 255, 0.5);
+    padding: 20px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.code .ot,
+.ct,
+.dark {
+    color: rgb(175, 163, 163);
+}
+
+.code .tags {
+    color: rgb(0, 195, 255);
+}
+
+.code .code-con {
+    color: white;
+}
+
+.code .pro {
+    color: #e4c7ba;
+}
+
+.code pre {
+    display: inline;
+}
+
+.code .att {
+    color: #9ccee6;
+}
+
+.code .fun {
+    color: rgb(114, 207, 121);
+}
+
+footer {
+    background-color: rgb(21, 27, 34);
+    color: white;
+    padding: 30px 4%;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.foot a {
+    text-decoration: none;
+    color: rgb(184, 182, 182);
+    font-weight: 600;
+}
+
+.foot a:hover {
+    color: white;
+}
+
+.foot p {
+    margin-top: 20px;
+}
+
+footer #copy {
+    text-align: center;
+    margin-top: 100px;
+}
+/* html styles */
+.htmlpage{
+    background-color: #e8fcf6;
+}
+.topics{
+    position: fixed;
+    margin-top: 110px;
+    width: 300px;
+    height: 83vh;
+    float: left;
+    background-color: #e8fcf6;
+    overflow-y: scroll;
+}
+.topics a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 40px;
+
+}
+.topics .active{
+    background-color: green;
+    color: white;
+}
+.topics a:hover:not(.active){
+    background-color: rgb(255, 255, 255);
+}
+.topics h2{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: 200;
+}
+.tutorial{
+    padding-top: 150px;
+    margin-left: 310px;
+}
+.tutorial h1{
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tutorial h2{
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.tutorial ul{
+    margin-left: 50px;
+}
+.tutorial li{
+    margin-top: 10px;
+}
+.example{
+    width: 75%;
+    border: 1px solid black;
+    background-color: rgb(223, 228, 231);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+.tutorial #exampleoutput{
+    margin-top: 10px;
+}
+.tutorial img{
+    width: 100%;
+}
+.tutorial span{
+    font-size: 20px;
+}
+.tutorial .tsym{
+    color: gray;
+}
+.tutorial .tcon{
+    color: blue;
+}
+.tutorial p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.structure , .headstructure, .bodystructure, .titlestructure{
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tutorial table,th,td{
+    border: 1px solid black;
+    padding: 20px 40px;
+    border-collapse: collapse;
+}
+.tutorial .but a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.tutorial .but{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 480px) {
+    .sec1 .main h1 {
+        font-size: 30px;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main .con1,
+    .main .con2 {
+        width: 100%;
+    }
+
+    .main .con2 img {
+        width: 90%;
+        height: 260px;
+
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .html-con,
+    .css-con,
+    .js-con,
+    .python-con {
+        width: 100%;
+    }
+
+    .exa {
+        margin-top: 20px;
+    }
+
+    .foot .tuto,
+    .foot .iq, .foot .comp {
+        width: 100%;
+    }
+
+    .foot .iq, .foot .comp {
+        margin-top: 20px;
+    }
+    .topics{
+        display: none;
+    }
+    .tutorial .example{
+        width: 100%;
+    }
+    .tutorial{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .tutorial ul{
+        margin-left: 20px;
+    }
+    .tutorial h1, .tutorial h2{
+        font-size: 26px;
+    }
+}

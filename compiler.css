@@ -1,0 +1,28 @@
+body{
+    background-color: #dcf8ef;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    width: 45%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 500px;
+    resize: none;
+    background-color: white;
+    box-shadow: 10px 10px 25px 0px #b8b6b8;
+    padding: 5px;
+}
+.content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+header button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: large;
+}
