@@ -36,7 +36,14 @@
 }
 
 .dropdown:hover .dropdown-content {
-    display: flex;
+    display: flex;  
+}
+.dropdown:hover{
+    cursor: pointer;
+}
+.dropdown span a{
+    text-decoration: none;
+    color: black;
 }
 
 header {
@@ -50,6 +57,9 @@ header {
     left: 0px;
     background-color: #dcf8ef;
     box-shadow: 0px 0px 5px rgba(18, 156, 190, 0.5);
+}
+header h1{
+    font-size: 1.4em;
 }
 
 nav {
@@ -80,6 +90,7 @@ nav .dropdown {
 }
 
 .main .con1 {
+    margin-top: 50px;
     width: 50%;
 }
 
@@ -118,7 +129,7 @@ nav .dropdown {
 }
 .menu-list h3{
     padding-left: 10px;
-    font-weight: 200;
+    font-weight: 600;
     margin-top: 20px;
 }
 .menu-list .menu-con{
@@ -137,12 +148,15 @@ nav .dropdown {
     line-height: 50px;
     
 }
-.menu-list .sub-menu .sidebar-icon, .menu-list .sub-menu1 .sidebar-icon{
+.menu-list .sub-menu-home .home{
+    line-height: 25px;
+}
+.menu-list .sub-menu .sidebar-icon, .menu-list .sub-menu1 .sidebar-icon, .menu-list .sub-menu2 .sidebar-icon{
     position: absolute;
     right: 10px;
     transition: 0.3s ease;
 }
-.menu-list .sub-menu-list, .menu-list .sub-menu-list1{
+.menu-list .sub-menu-list, .menu-list .sub-menu-list1, .menu-list .sub-menu-list2{
     margin-top: 10px;
     background-color: rgb(20, 19, 19);
     transition: height 0.35s ease-in-out;
@@ -151,13 +165,13 @@ nav .dropdown {
     margin-left: -70%;
     transition: 0.7s ease-in-out;
 }
-.sub-menu-list.active, .sub-menu-list1.active{
+.sub-menu-list.active, .sub-menu-list1.active, .sub-menu-list2.active{
     margin-left: 0%;
 }
-.menu-list .sub-menu-list:not(.active), .menu-list .sub-menu-list1:not(.active){
+.menu-list .sub-menu-list:not(.active), .menu-list .sub-menu-list1:not(.active), .menu-list .sub-menu-list2:not(.active){
     display: none;
 }
-.sub-menu .sub-menu-icon.rotate, .sub-menu1 .sub-menu-icon1.rotate{
+.sub-menu .sub-menu-icon.rotate, .sub-menu1 .sub-menu-icon1.rotate, .sub-menu2 .sub-menu-icon2.rotate{
     transform: rotate(90deg);
 }
 .sec2,
@@ -333,7 +347,7 @@ footer {
     margin-top: 20px;
 }
 
-footer #copy {
+footer #copyright {
     text-align: center;
     margin-top: 100px;
 }
@@ -374,12 +388,12 @@ footer #copy {
     margin-left: 310px;
 }
 .tutorial h1{
-    font-weight: 200;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 .tutorial h2{
-    font-weight: 200;
+    font-weight: 600;
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -394,7 +408,7 @@ footer #copy {
     border: 1px solid black;
     background-color: rgb(223, 228, 231);
     box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-    padding: 20px;
+    padding: 5px 10px;
 }
 .tutorial #exampleoutput{
     margin-top: 10px;
@@ -431,15 +445,21 @@ footer #copy {
     display: inline-block;
     background-color: green;
     color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 .tutorial .but{
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
-
+.tutorial .first-but{
+    justify-content: end;
+}
+footer .tuto-foot, footer .copy{
+    margin-left: 200px;
+}
 
 @media screen and (max-width: 480px) {
     .sec1 .main h1 {
@@ -504,5 +524,6 @@ footer #copy {
     }
     .tutorial h1, .tutorial h2{
         font-size: 26px;
+        font-weight: bold;
     }
 }

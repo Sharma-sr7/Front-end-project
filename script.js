@@ -24,28 +24,40 @@ submenu1.addEventListener("click", function(){
     list1.classList.toggle("active");
     menuicon1.classList.toggle("rotate");
 });
-// submenu.forEach((btn) => {
-//     btn.addEventListener("click", function (event) {
-//         event.preventDefault();
-//         const container =document.getElementById(this.dataset.container);
-//         if(!container.classList.contains("active")){
-//             container.classList.add("active");
-//             container.style.height = "auto";
-//             const height = container.clientHeight + "px";
-//             container.style.height = "0px";
-//             setTimeout(function () {
-
-//             },0);
-//         }else{
-
-//         }
-//     });
-// });
+const submenu2 = document.querySelector(" .sub-menu2");
+const list2 = document.querySelector(".sub-menu-list2");
+const menuicon2 = document.querySelector(".sub-menu2 .sub-menu-icon2")
+submenu2.addEventListener("click", function(){
+    list2.classList.toggle("active");
+    menuicon2.classList.toggle("rotate");
+});
 
 
 
-
-function tryIt(){
-    var code = document.getElementById('input').value;
-    document.getElementById('output').innerHTML = code;
-}
+// compiler 
+const htmlCode = document.getElementById("html-code");
+const cssCode = document.getElementById("css-code");
+const jsCode = document.getElementById("js-code");
+const combtn = document.getElementById("com-btn");
+const outputDiv = document.getElementById("com-code");
+combtn.addEventListener('click', function(){
+    const htmlcodes = htmlCode.value;
+    const csscodes = cssCode.value;
+    const jscodes = jsCode.value;
+    const output = `
+    <html>
+    <head>
+    <style>
+    ${csscodes}
+    </style>
+    </head>
+    <body>
+    ${htmlcodes}
+    <script>
+    ${jscodes}
+    </script>
+    </body>
+    </html>
+    `;
+    outputDiv.innerHTML = output;
+});
