@@ -9,6 +9,15 @@ closebtn.addEventListener("click", function () {
     sidebar.classList.remove("active");
     menubtn.style.visibility = "visible"
 });
+
+const mobicon = document.getElementById("mob-nav-icon");
+const mobsidebar = document.querySelector(".htmlpage .topics");
+const mobmenuicon = document.querySelector("#mob-nav-icon i");
+mobicon.addEventListener("click",function(){
+    mobsidebar.classList.toggle("active");
+    mobmenuicon.classList.toggle("fa-bars");
+    mobmenuicon.classList.toggle("fa-xmark")
+});
 const submenu = document.querySelector(" .sub-menu");
 const list = document.querySelector(".sub-menu-list");
 const menuicon = document.querySelector(".sub-menu .sub-menu-icon");

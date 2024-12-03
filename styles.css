@@ -45,7 +45,6 @@
     text-decoration: none;
     color: black;
 }
-
 header {
     width: 100%;
     display: flex;
@@ -123,6 +122,8 @@ nav .dropdown {
     transition: 0.6s ease;
     transition-property: left;
     left: -80%;
+    overflow: scroll;
+    z-index: 2;
 }
 .menu-list.active{
     left: 0%;
@@ -154,25 +155,61 @@ nav .dropdown {
 .menu-list .sub-menu .sidebar-icon, .menu-list .sub-menu1 .sidebar-icon, .menu-list .sub-menu2 .sidebar-icon{
     position: absolute;
     right: 10px;
-    transition: 0.3s ease;
+    transition: 0.1s ease;
 }
 .menu-list .sub-menu-list, .menu-list .sub-menu-list1, .menu-list .sub-menu-list2{
     margin-top: 10px;
     background-color: rgb(20, 19, 19);
-    transition: height 0.35s ease-in-out;
     overflow: hidden;
     padding-left: 30px;
-    margin-left: -70%;
-    transition: 0.7s ease-in-out;
+    position: relative;
+    transition: 0.6s ease;
+    left: -100%;
 }
 .sub-menu-list.active, .sub-menu-list1.active, .sub-menu-list2.active{
-    margin-left: 0%;
+    left: 0%;
 }
 .menu-list .sub-menu-list:not(.active), .menu-list .sub-menu-list1:not(.active), .menu-list .sub-menu-list2:not(.active){
     display: none;
 }
 .sub-menu .sub-menu-icon.rotate, .sub-menu1 .sub-menu-icon1.rotate, .sub-menu2 .sub-menu-icon2.rotate{
     transform: rotate(90deg);
+}
+.mob-nav{
+    position: fixed;
+    top: 85px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow-x: scroll;
+    display: none;
+}
+.mob-nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.mob-nav ul li{
+    list-style-type: none;
+    font-weight: bold;
+}
+.mob-nav ul #mob-nav-icon{
+    padding:10px 20px;
+
+}
+.mob-nav ul li a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: block;
+    padding:7px 20px;
+}
+.mob-nav ul li .active{
+    background-color: #dcf8ef;
+    color: black;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 .sec2,
 .sec3,
@@ -224,10 +261,13 @@ nav .dropdown {
 
 .html-con h1,
 .css-con h1,
-.js-con h1,
-.python-con h1 {
+.js-con h1 {
     font-weight: bold;
     font-size: 80px;
+}
+.python-con h1{
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .html-con p,
@@ -462,6 +502,9 @@ footer .tuto-foot, footer .copy{
 }
 
 @media screen and (max-width: 480px) {
+    .mob-nav{
+        display: block;
+    }
     .sec1 .main h1 {
         font-size: 30px;
     }
@@ -509,8 +552,18 @@ footer .tuto-foot, footer .copy{
     .foot .iq, .foot .comp {
         margin-top: 20px;
     }
-    .topics{
-        display: none;
+    .htmlpage .topics{
+        margin-top: 127px;
+        padding-top: 10px;
+        width: 60%;
+        transition: 0.5s ease;
+        left: -60%;
+    }
+    .htmlpage .topics.active{
+        left: 0%;
+    }
+    .mob-nav li p{
+        padding: 0px;
     }
     .tutorial .example{
         width: 100%;
@@ -525,5 +578,8 @@ footer .tuto-foot, footer .copy{
     .tutorial h1, .tutorial h2{
         font-size: 26px;
         font-weight: bold;
+    }
+    footer .tuto-foot, footer .copy{
+        margin-left: 0px;
     }
 }
