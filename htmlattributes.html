@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
 </head>
 
 <body>
@@ -101,8 +100,8 @@
         <div class="topics">
             <h2>HTML Tutorial</h2>
             <p><a href="htmlhome.html" >HTML Introduction</a></p>
-            <p><a href="htmlbasic.html" class="active">HTML Basics</a></p>
-            <p><a href="htmlattributes.html">HTML Attributes</a></p>
+            <p><a href="htmlbasic.html">HTML Basics</a></p>
+            <p><a href="htmlattributes.html" class="active">HTML Attributes</a></p>
             <p><a href="htmlheading.html">HTML Headings</a></p>
             <p><a href="htmlparagraphs.html">HTML Paragraphs</a></p>
             <p><a href="htmlstyles.html">HTML Styles</a></p>
@@ -122,103 +121,66 @@
             <p><a href="htmlresponsive.html">HTML Responsive</a></p>
         </div>
         <div class="tutorial">
-            <h1>HTML Basics</h1>
-            <p>Learning the basics is very important to become a software developer.</p>
-            <h2>HTML Documents</h2>
-            <p>All HTML documents must start with a document type declaration: <span class="tsym">&lt;</span> <span
-                    class="tcon">!DOCTYPE</span> <span class="tcon">html</span> <span class="tsym">&gt; .</p>
-            <p>The HTML document itself begins with <span class="tsym">&lt;</span> <span class="tcon">html</span> <span
-                    class="tsym">&gt;</span> and ends with <span class="tsym">&lt;/</span> <span
-                    class="tcon">html</span> <span class="tsym">&gt;</span>.</p>
-            <p>The visible part of the HTML document is between <span class="tsym">&lt;</span> <span
-                    class="tcon">body</span> <span class="tsym">&gt;</span> and <span class="tsym">&lt;/</span> <span
-                    class="tcon">body</span> <span class="tsym">&gt;</span>.</p>
+            <h1>HTML Attributes</h1>
+            <p>HTML attributes provide additional information about HTML elements.</p>
+            <h2>HTML Attributes</h2>
+            <ul>
+                <li>All HTML elements can have <b>attributes</b></li>
+                <li>Attributes provide <b>additional information</b> about elements</li>
+                <li>Attributes are always specified in the <b>start tag</b> </li>
+                <li>Attributes usually come in name/value pairs like: <b>name="value"</b> </li>
+            </ul>
+            <h2>The href Attribute</h2>
+            <p>The <span class="tsym">&lt;</span> <span class="tcon">a</span><span class="tsym">&gt;</span> tag defines a hyperlink. The <span class="tcon">href</span> attribute specifies the URL of the page the link goes to:</p>
             <div class="example">
                 <h2>Example</h2>
-                <img src="h1.PNG" alt="">
+                <img src="h9.PNG" alt="">
             </div>
             <div class="example" id="exampleoutput">
                 <h2>Output</h2>
-                <img src="h2.PNG" alt="">
+                <img src="out3.PNG" alt="">
             </div>
-            <h2>The <span>&lt;</span> !DOCTYPE <span>&gt;</span> Declaration</h2>
-            <p>The <span class="tsym">&lt;</span> <span class="tcon"> !DOCTYPE </span> <span class="tsym">&gt;</span>
-                declaration represents the document type, and helps browsers to display web pages correctly.</p>
-            <p>The <span class="tsym">&lt;</span> <span class="tcon"> !DOCTYPE </span> <span class="tsym">&gt;</span>
-                declaration is not case sensitive.</p>
-            <h2>HTML Headings</h2>
-            <span class="tsym">&lt;</span>
-            <span class="tcon">tagname</span>
-            <span class="tsym">></span>
-            <span class="econ"> content </span>
-            <span class="tsym">&lt;</span>
-            <span class="tsym">/</span>
-            <span class="tcon">tagname</span>
-            <span class="tsym">></span>
-            <br>
-            <h2>Some HTML elements are,</h2>
-            <span class="tsym">&lt;</span>
-            <span class="tcon">h1</span>
-            <span class="tsym">></span>
-            <span class="econ"> This is heading </span>
-            <span class="tsym">&lt;</span>
-            <span class="tsym">/</span>
-            <span class="tcon">h1</span>
-            <span class="tsym">></span>
-            <br><br>
-            <span class="tsym">&lt;</span>
-            <span class="tcon">p</span>
-            <span class="tsym">></span>
-            <span class="econ"> This is paragraph </span>
-            <span class="tsym">&lt;</span>
-            <span class="tsym">/</span>
-            <span class="tcon">p</span>
-            <span class="tsym">></span>
-            <br><br>
-            <h1>HTML Headings</h1>
-            <p>HTML headings are defined with the <span class="tsym">&lt;</span><span class="tcon">h1</span> <span class="tsym">&gt;</span> to <span class="tsym">&lt;</span> <span class="tcon">h6</span> <span class="tsym">&gt;</span> tags.</p>
-            <p><span class="tsym">&lt;</span> <span class="tcon">h1</span> <span class="tsym">&gt;</span> defines the most important heading. <span class="tsym">&lt;</span> <span class="tcon">h6</span><span class="tsym">&gt;</span> defines the least important heading: </p>
+            <h2>The src Attribute</h2>
+            <p>The <span class="tsym">&lt;</span> <span class="tcon">img</span><span class="tsym">&gt;</span> tag is used to embed an image in an HTML page. The <span class="tcon">src</span> attribute specifies the path to the image to be displayed:</p>
             <div class="example">
                 <h2>Example</h2>
-                <img src="h5.PNG" alt="">
+                <img src="h10.PNG" alt="">
+            </div>
+            <h2>The width and height Attributes</h2>
+            <p>The <span class="tsym">&lt;</span> <span class="tcon">img</span><span class="tsym">&gt;</span> tag should also contain the <span class="tcon">width</span> and <span class="tcon">height</span> attributes, which specify the width and height of the image (in pixels):</p>
+            <div class="example">
+                <h2>Example</h2>
+                <img src="h11.PNG" alt="">
+            </div>
+            <h2>The alt Attribute</h2>
+            <p>The required <span class="tcon">alt</span> attribute for the <span class="tsym">&lt;</span> <span class="tcon">img</span><span class="tsym">&gt;</span> tag specifies an alternate text for an image, if the image for some reason cannot be displayed, the alternate text will be displayed</p>
+            <div class="example">
+                <h2>Example</h2>
+                <img src="h12.PNG" alt="">
             </div>
             <div class="example" id="exampleoutput">
                 <h2>Output</h2>
-                <img src="out.PNG" alt="">
+                <img src="out4.PNG" alt="">
             </div>
-            <h1>HTML Paragraphs</h1>
-            <p>HTML paragraphs are defined with the <span class="tsym">&lt;</span> <span class="tcon">p</span><span class="tsym">&gt;</span> tag:</p>
+            <h2>The style Attribute</h2>
+            <p>The <span class="tcon">style</span> attribute is used to add styles to an element, such as color, font, size, and more.</p>
             <div class="example">
                 <h2>Example</h2>
-                <img src="h6.PNG" alt="">
+                <img src="h13.PNG" alt="">
             </div>
             <div class="example" id="exampleoutput">
                 <h2>Output</h2>
-                <img src="out1.PNG" alt="">
+                <img src="out5.PNG" alt="">
             </div>
-            <h1>HTML Links</h1>
-            <p>HTML links are defined with the <span class="tsym">&lt;</span> <span class="tcon">a</span><span class="tsym">&gt;</span> tag:</p>
+            <h2>The lang Attribute</h2>
+            <p>You should always include the <span class="tcon">lang</span> attribute inside the <span class="tsym">&lt;</span> <span class="tcon">html</span><span class="tsym">&gt;</span> tag, to declare the language of the Web page.</p>
             <div class="example">
                 <h2>Example</h2>
-                <img src="h7.PNG" alt="">
-            </div>
-            <div class="example" id="exampleoutput">
-                <h2>Output</h2>
-                <img src="out2.PNG" alt="">
-            </div>
-            <p>The link's destination is specified in the <span class="tcon">href</span> attribute. </p>
-            <p>Attributes are used to provide additional information about HTML elements.</p>
-            <p>You will learn more about attributes in a later chapter.</p>
-            <h1>HTML Images</h1>
-            <p>HTML images are defined with the <span class="tsym">&lt;</span> <span class="tcon">img</span><span class="tsym">&gt;</span> tag.</p>
-            <p>The source file (<span class="tcon">src</span>), alternative text (<span class="tcon">alt</span>), <span class="tcon">width</span>, and <span class="tcon">height</span> are provided as attributes:</p>
-            <div class="example">
-                <h2>Example</h2>
-                <img src="h8.PNG" alt="">
+                <img src="h14.PNG" alt="">
             </div>
             <div class="but">
-                <a class="prebtn" href="htmlhome.html"> <i class="fa-solid fa-angle-left sidebar-icon"></i> Previous </i></a>
-                <a class="nexbtn" href="htmlattributes.html">Next <i class="fa-solid fa-angle-right sidebar-icon"></i></a>
+                <a href="htmlbasic.html"> <i class="fa-solid fa-angle-left sidebar-icon"></i> Previous </i></a>
+                <a href="htmlheading.html">Next <i class="fa-solid fa-angle-right sidebar-icon"></i></a>
             </div>
 
         </div>

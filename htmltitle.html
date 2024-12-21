@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
 </head>
 
 <body>
@@ -101,17 +100,17 @@
         <div class="topics">
             <h2>HTML Tutorial</h2>
             <p><a href="htmlhome.html" >HTML Introduction</a></p>
-            <p><a href="htmlbasic.html" class="active">HTML Basics</a></p>
+            <p><a href="htmlbasic.html">HTML Basics</a></p>
             <p><a href="htmlattributes.html">HTML Attributes</a></p>
-            <p><a href="htmlheading.html">HTML Headings</a></p>
-            <p><a href="htmlparagraphs.html">HTML Paragraphs</a></p>
+            <p><a href="htmlheading.html" >HTML Headings</a></p>
+            <p><a href="htmlparagraphs.html" >HTML Paragraphs</a></p>
             <p><a href="htmlstyles.html">HTML Styles</a></p>
             <p><a href="htmlformatting.html">HTML Formatting</a></p>
-            <p><a href="htmlcomments.html">HTML Comments</a></p>
+            <p><a href="htmlcomments.html" >HTML Comments</a></p>
             <p><a href="htmllinks.html">HTML Links</a></p>
             <p><a href="htmlimages.html">HTML Images</a></p>
             <p><a href="htmlfavicon.html">HTML Favicon</a></p>
-            <p><a href="htmltitle.html">HTML Title</a></p>
+            <p><a href="htmltitle.html" class="active">HTML Title</a></p>
             <p><a href="htmltables.html">HTML Tables</a></p>
             <p><a href="htmllists.html">HTML Lists</a></p>
             <p><a href="htmlblockandinline.html">HTML Block & Inline</a></p>
@@ -122,103 +121,22 @@
             <p><a href="htmlresponsive.html">HTML Responsive</a></p>
         </div>
         <div class="tutorial">
-            <h1>HTML Basics</h1>
-            <p>Learning the basics is very important to become a software developer.</p>
-            <h2>HTML Documents</h2>
-            <p>All HTML documents must start with a document type declaration: <span class="tsym">&lt;</span> <span
-                    class="tcon">!DOCTYPE</span> <span class="tcon">html</span> <span class="tsym">&gt; .</p>
-            <p>The HTML document itself begins with <span class="tsym">&lt;</span> <span class="tcon">html</span> <span
-                    class="tsym">&gt;</span> and ends with <span class="tsym">&lt;/</span> <span
-                    class="tcon">html</span> <span class="tsym">&gt;</span>.</p>
-            <p>The visible part of the HTML document is between <span class="tsym">&lt;</span> <span
-                    class="tcon">body</span> <span class="tsym">&gt;</span> and <span class="tsym">&lt;/</span> <span
-                    class="tcon">body</span> <span class="tsym">&gt;</span>.</p>
+            <h1>HTML Page Title</h1>
+            <p>Every web page should have a page title to describe the meaning of the page.</p>
+            <h2>The Title Element</h2>
+            <p>The <span class="tsym">&lt;</span><span class="tcon">title</span><span class="tsym">&gt;</span> element adds a title to your page:</p>
             <div class="example">
-                <h2>Example</h2>
-                <img src="h1.PNG" alt="">
+                <h2>Exapmle</h2>
+                <img src="t1.PNG" alt="">
             </div>
-            <div class="example" id="exampleoutput">
-                <h2>Output</h2>
-                <img src="h2.PNG" alt="">
-            </div>
-            <h2>The <span>&lt;</span> !DOCTYPE <span>&gt;</span> Declaration</h2>
-            <p>The <span class="tsym">&lt;</span> <span class="tcon"> !DOCTYPE </span> <span class="tsym">&gt;</span>
-                declaration represents the document type, and helps browsers to display web pages correctly.</p>
-            <p>The <span class="tsym">&lt;</span> <span class="tcon"> !DOCTYPE </span> <span class="tsym">&gt;</span>
-                declaration is not case sensitive.</p>
-            <h2>HTML Headings</h2>
-            <span class="tsym">&lt;</span>
-            <span class="tcon">tagname</span>
-            <span class="tsym">></span>
-            <span class="econ"> content </span>
-            <span class="tsym">&lt;</span>
-            <span class="tsym">/</span>
-            <span class="tcon">tagname</span>
-            <span class="tsym">></span>
-            <br>
-            <h2>Some HTML elements are,</h2>
-            <span class="tsym">&lt;</span>
-            <span class="tcon">h1</span>
-            <span class="tsym">></span>
-            <span class="econ"> This is heading </span>
-            <span class="tsym">&lt;</span>
-            <span class="tsym">/</span>
-            <span class="tcon">h1</span>
-            <span class="tsym">></span>
-            <br><br>
-            <span class="tsym">&lt;</span>
-            <span class="tcon">p</span>
-            <span class="tsym">></span>
-            <span class="econ"> This is paragraph </span>
-            <span class="tsym">&lt;</span>
-            <span class="tsym">/</span>
-            <span class="tcon">p</span>
-            <span class="tsym">></span>
-            <br><br>
-            <h1>HTML Headings</h1>
-            <p>HTML headings are defined with the <span class="tsym">&lt;</span><span class="tcon">h1</span> <span class="tsym">&gt;</span> to <span class="tsym">&lt;</span> <span class="tcon">h6</span> <span class="tsym">&gt;</span> tags.</p>
-            <p><span class="tsym">&lt;</span> <span class="tcon">h1</span> <span class="tsym">&gt;</span> defines the most important heading. <span class="tsym">&lt;</span> <span class="tcon">h6</span><span class="tsym">&gt;</span> defines the least important heading: </p>
+            <p>The title is shown in the browser's title bar:</p>
             <div class="example">
-                <h2>Example</h2>
-                <img src="h5.PNG" alt="">
+                <img src="fav2.PNG" alt="">
             </div>
-            <div class="example" id="exampleoutput">
-                <h2>Output</h2>
-                <img src="out.PNG" alt="">
-            </div>
-            <h1>HTML Paragraphs</h1>
-            <p>HTML paragraphs are defined with the <span class="tsym">&lt;</span> <span class="tcon">p</span><span class="tsym">&gt;</span> tag:</p>
-            <div class="example">
-                <h2>Example</h2>
-                <img src="h6.PNG" alt="">
-            </div>
-            <div class="example" id="exampleoutput">
-                <h2>Output</h2>
-                <img src="out1.PNG" alt="">
-            </div>
-            <h1>HTML Links</h1>
-            <p>HTML links are defined with the <span class="tsym">&lt;</span> <span class="tcon">a</span><span class="tsym">&gt;</span> tag:</p>
-            <div class="example">
-                <h2>Example</h2>
-                <img src="h7.PNG" alt="">
-            </div>
-            <div class="example" id="exampleoutput">
-                <h2>Output</h2>
-                <img src="out2.PNG" alt="">
-            </div>
-            <p>The link's destination is specified in the <span class="tcon">href</span> attribute. </p>
-            <p>Attributes are used to provide additional information about HTML elements.</p>
-            <p>You will learn more about attributes in a later chapter.</p>
-            <h1>HTML Images</h1>
-            <p>HTML images are defined with the <span class="tsym">&lt;</span> <span class="tcon">img</span><span class="tsym">&gt;</span> tag.</p>
-            <p>The source file (<span class="tcon">src</span>), alternative text (<span class="tcon">alt</span>), <span class="tcon">width</span>, and <span class="tcon">height</span> are provided as attributes:</p>
-            <div class="example">
-                <h2>Example</h2>
-                <img src="h8.PNG" alt="">
-            </div>
+
             <div class="but">
-                <a class="prebtn" href="htmlhome.html"> <i class="fa-solid fa-angle-left sidebar-icon"></i> Previous </i></a>
-                <a class="nexbtn" href="htmlattributes.html">Next <i class="fa-solid fa-angle-right sidebar-icon"></i></a>
+                <a href="htmlfavicon.html"> <i class="fa-solid fa-angle-left sidebar-icon"></i> Previous </i></a>
+                <a href="htmltables.html">Next <i class="fa-solid fa-angle-right sidebar-icon"></i></a>
             </div>
 
         </div>
