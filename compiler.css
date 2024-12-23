@@ -31,9 +31,9 @@ body{
 .codes{
     margin-bottom: 20px;
 }
-.html, .css, .js{
+.html, .css{
     text-align: center;
-    width: 32%;
+    width: 45%;
 }
 .codes h4{
     margin-bottom: 20px;
@@ -48,6 +48,7 @@ body{
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     background-color: black;
     color: white;
+    border-radius: 5px;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 30px;

@@ -40,8 +40,28 @@ submenu2.addEventListener("click", function () {
     list2.classList.toggle("active");
     menuicon2.classList.toggle("rotate");
 });
+function alertfun(){
+    alert("Now you can't access this one")
+}
 
-
+const notAccess = document.querySelector(" .sub-menu1 .sub-menu-list1 a ");
+notAccess.addEventListener("click", function(){
+    alertfun()
+})
+const notAccess1 = document.querySelector(".foot .iq p a")
+notAccess1.addEventListener("click", function(){
+    alertfun()
+})
+const notAccess2 = document.querySelectorAll(".mob-nav ul li a:not(.active)")
+notAccess1.addEventListener("click", function(){
+    alertfun()
+})
+notAccess2.forEach((element)=>{
+    element.addEventListener("click", function(){
+        element.removeAttribute("href")
+        alertfun()
+    })
+})
 // const dark = document.querySelector("header")
 // const maindark = document.querySelector("main")
 // const exampledark = document.querySelectorAll(".example")
