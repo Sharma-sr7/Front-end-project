@@ -518,6 +518,30 @@ footer .tuto-foot, footer .copy{
 .dark-code{
     color: yellow;
 }
+.interview{
+    padding-top: 135px;
+    padding-right: 2%;
+}
+.interview .int-con{
+    padding-left: 4%;
+}
+.interview h1{
+    padding-left: 2%;
+    margin-bottom: 20px;
+}
+.interview h3{
+    letter-spacing: 1px;
+    font-size: 25px;
+    color: green;
+}
+.interview p{
+    margin-top: 10px;
+    text-indent: 40px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 30px;
+}
 @media (max-width:1100px) {
     .mob-nav{
         display: block;

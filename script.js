@@ -44,78 +44,34 @@ function alertfun(){
     alert("Now you can't access this one")
 }
 
-const notAccess = document.querySelector(" .sub-menu1 .sub-menu-list1 a ");
-notAccess.addEventListener("click", function(){
-    alertfun()
-})
-const notAccess1 = document.querySelector(".foot .iq p a")
-notAccess1.addEventListener("click", function(){
-    alertfun()
-})
+const notAccess = document.querySelector(" .sub-menu1 .sub-menu-list1 a ").href = 'inqu.html';
+const notAccess1 = document.querySelector(".foot .iq p a").href = 'inqu.html';
 const notAccess2 = document.querySelectorAll(".mob-nav ul li a:not(.active)")
-notAccess1.addEventListener("click", function(){
-    alertfun()
-})
 notAccess2.forEach((element)=>{
     element.addEventListener("click", function(){
         element.removeAttribute("href")
         alertfun()
     })
 })
-// const dark = document.querySelector("header")
-// const maindark = document.querySelector("main")
-// const exampledark = document.querySelectorAll(".example")
-// const codedark = document.querySelectorAll(".tcon")
-// const btndark = document.querySelector(".but .prebtn")
-// const nexbtn = document.querySelector(".but .nexbtn")
-// const sidedark = document.querySelector(".topics")
-// const sidelink = document.querySelectorAll(".topics a:not(.active)")
-// const activedark = document.querySelector(".topics a.active")
-// const changetheme = document.getElementById("dark")
-// changetheme.addEventListener("click", function () {
-//     dark.classList.toggle("dark-theme")
-//     maindark.classList.toggle("dark-theme")
-//     exampledark.forEach((element) => {
-//         element.classList.toggle("dark=theme")
-//     })
-//     codedark.forEach((element) => {
-//         element.classList.toggle("dark-code")
-//     })
-// })
-// exampledark.forEach((element) => {
-//     element.style.backgroundColor = "grey"
-//     element.style.color = "black"
 
-// })
-// changetheme.addEventListener("click", function () {
-//     dark.style.backgroundColor = "black"
-//     dark.style.color = "white"
-//     maindark.style.backgroundColor = "black"
-//     maindark.style.color = "white"
-//
-    // codedark.forEach((element) => {
-    //     element.style.color = "yellow"
-    // })
-//     btndark.style.border = "3px solid white"
-//     btndark.style.backgroundColor = "black"
-//     btndark.style.color = "white"
-//     nexbtn.style.border = "3px solid white"
-//     nexbtn.style.backgroundColor = "black"
-//     nexbtn.style.color = "white"
-//     sidedark.style.backgroundColor = "black"
-//     sidelink.forEach((element) => {
-//         element.style.color = "white"
-//     })
-//     sidelink.forEach((element) => {
-//         element.addEventListener("mouseover", function () {
-//             element.style.color = "black"
-//         })
-//     })
-//     sidelink.forEach((element) => {
-//         element.addEventListener("mouseout", function () {
-//             element.style.color = "white"
-//         })
-//     })
-//     activedark.style.backgroundColor = "white"
-//     activedark.style.color = "black"
-// })
+const notAccess3 = document.querySelectorAll('.sec3 .css-con a');
+notAccess3.forEach((ele)=>{
+    ele.addEventListener('click', function(){
+        ele.removeAttribute('href')
+        alertfun()
+    })
+})
+const notAccess4 = document.querySelectorAll('.sec4 .js-con a');
+notAccess4.forEach((ele)=>{
+    ele.addEventListener('click', function(){
+        ele.removeAttribute('href')
+        alertfun()
+    })
+})
+const notAccess5 = document.querySelectorAll('.sec5 .python-con a');
+notAccess5.forEach((ele)=>{
+    ele.addEventListener('click', function(){
+        ele.removeAttribute('href')
+        alertfun()
+    })
+})
